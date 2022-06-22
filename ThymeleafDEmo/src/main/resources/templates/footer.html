@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<footer th:fragment="footer1(title,subtitle)">
+		<div class="container" >
+			<h1 th:text="${title}"></h1>
+			<h2 th:text="${subtitle}"></h2>
+			<h3>copy-right by sid..Lorem ipsum dolor sit amet, consectetur
+				adipisicing elit. Perferendis praesentium ratione omnis illum vel
+				explicabo sed esse recusandae accusantium eaque.</h3>
+		</div>
+	</footer>
+
+</body>
+</html>

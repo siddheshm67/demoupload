@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>this is list iterator</h1>
+	<ul>
+		<li th:each="n,iStat:${list}">
+		<span th:style="${iStat.odd}? 'color:blue;' : 'color:red'" 
+			  th:text="${iStat.index}+' '+ ${n}">
+		</span>
+		</li>
+	</ul>
+
+</body>
+</html>

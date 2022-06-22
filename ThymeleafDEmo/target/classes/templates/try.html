@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>elvis demo</h1>
+
+<h3>User is : <span th:style="${isActive}? 'color:yellow;' : 'color:red'" 
+ 				th:text="${isActive}?'active':'inActive'"></span></h3>
+ 				
+<h1>if-Unless demo</h1>
+
+<h3 th:if="${gender}=='male'">male</h3>
+<h3 th:unless="${gender}=='male'">female</h3>
+
+<h1>Switch Case Demo</h1>
+
+<div th:switch="${#lists.size(nums)}">
+
+<h3 th:case="'0'">List has zero elements</h3>
+<h3 th:case="'1'">List has One elements</h3>
+<h3 th:case="*">List has greator then one elements</h3>
+
+</div>
+
+
+</body>
+</html>

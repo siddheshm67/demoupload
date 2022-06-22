@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>my website</h1>
+<h2>this is home page</h2>
+<h3>this is bla bla bla..</h3>
+
+<footer th:replace="footer::footer1 (${a},${b})">
+
+<!-- 
+<footer th:include="footer::footer1">
+<footer th:insert="footer::footer1">
+ -->
+
+</footer>
+
+</body>
+</html>
