@@ -19,6 +19,8 @@ public class MyController {
 		
 		model.addAttribute("date", new Date().toLocaleString());
 		
+		System.out.println("hiiiiiiiiiiii");
+		
 		System.out.println( "date : "+dateString);
 		
 		return"home";
